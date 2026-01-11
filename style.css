@@ -39,39 +39,35 @@ nav.menu a:hover {
   width: auto;
 }
 
-/* Navigation menu */
-nav.menu {
+.header-container {
   display: flex;
-  gap: 20px;
-  background: transparent;
-  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  background: #0a3d2e;
+  padding: 8px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
-/* Navigation links */
+.logo {
+  height: 30px;
+}
+
+nav.menu {
+  display: flex;
+  gap: 22px;
+}
+
 nav.menu a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
-  font-weight: 600;
   font-size: 14px;
-  margin: 0;
+  font-weight: 600;
 }
 
 nav.menu a:hover {
   text-decoration: underline;
-}
-
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-nav a {
-  margin: 8px;
-}
-
-nav.menu {
-  padding: 10px 0;
 }
 
 
