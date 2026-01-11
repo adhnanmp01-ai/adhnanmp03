@@ -9,31 +9,6 @@ body {
   background: #fff;
   color: #0a3d2e;
 }
-/* Header container */
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-
-/* Logo size */
-.logo {
-  height: 30px;
-  width: auto;
-}
-
-/* Navigation menu styling */
-nav.menu {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background: #0a3d2e;
-  padding: 10px 0;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
 
 nav.menu a {
   color: #fff;
@@ -46,9 +21,45 @@ nav.menu a {
 nav.menu a:hover {
   text-decoration: underline;
 }
+/* Header container */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0a3d2e;
+  padding: 6px 20px; /* reduced height */
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 
+/* Logo */
+.logo {
+  height: 28px; /* smaller logo */
+  width: auto;
+}
 
-  
+/* Navigation menu */
+nav.menu {
+  display: flex;
+  gap: 20px;
+  background: transparent;
+  padding: 0;
+}
+
+/* Navigation links */
+nav.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 0;
+}
+
+nav.menu a:hover {
+  text-decoration: underline;
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -56,11 +67,13 @@ nav {
 }
 
 nav a {
-  color: #fff;
-  text-decoration: none;
   margin: 8px;
-  font-size: 14px;
 }
+
+nav.menu {
+  padding: 10px 0;
+}
+
 
 section {
   padding: 40px 20px;
